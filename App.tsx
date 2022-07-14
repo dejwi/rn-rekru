@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import Feed from './screens/Feed';
+import Navbar from './components/Navbar';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,7 @@ const App = () => {
       >
         <Stack.Screen name="Feed" component={Feed} />
       </Stack.Navigator>
+      <Navbar />
     </NavigationContainer>
   );
 };
