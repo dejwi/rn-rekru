@@ -11,7 +11,7 @@ const Top = () => {
       <View style={styles.svgsCont}>
         <AddPostSvg style={styles.svg} />
         <CalendarSvg style={styles.svg} />
-        <AddPeopleSvg style={styles.svg} />
+        <AddPeopleSvg style={styles.svg} fill="#28235F" />
       </View>
       <Image source={profilePic} style={styles.prof} />
     </View>
