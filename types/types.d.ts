@@ -1,4 +1,11 @@
-type boardData = {
+type RootStackParamList = {
+  Feed: undefined;
+  Article: {
+    id: string;
+  };
+};
+
+interface boardData {
   id: string;
   fullName: string;
   title: string;
@@ -6,10 +13,10 @@ type boardData = {
   imgIndex: number | null;
   profilePicIndex: number;
   liked: boolean;
-};
+}
 type tabs = 'board' | 'events' | 'articles' | 'video' | 'podcasts';
 
-type eventsData = {
+interface eventsData {
   id: string;
   date: string;
   title: string;
@@ -17,4 +24,21 @@ type eventsData = {
   imgIndex: number;
   type: string;
   joined: boolean;
-};
+}
+
+interface articleData {
+  id: string;
+  title: string;
+  imgIndex: number;
+  liked: boolean;
+  content: string;
+  readTime: string;
+}
+
+interface specialistData {
+  id: string;
+  firstName: string;
+  lastName: string;
+  followed: boolean;
+  profilePicIndex: number;
+}
