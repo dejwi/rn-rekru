@@ -1,0 +1,92 @@
+[
+  {
+    "id": "62d16e1eaab5f44acac2d05d",
+    "title": "Aliquip anim cupidatat est",
+    "imgIndex": 0,
+    "type": "Online",
+    "participants": 30,
+    "date": "Tue Dec 20 2022 15:45:14 GMT+0100 (Central European Standard Time)",
+    "joined": false
+  },
+  {
+    "id": "62d16e1e4582230b7d1e8e4c",
+    "title": "Sint velit",
+    "imgIndex": 1,
+    "type": "Online",
+    "participants": 10,
+    "date": "Sun Oct 23 2022 04:58:28 GMT+0200 (Central European Summer Time)",
+    "joined": false
+  },
+  {
+    "id": "62d16e1eb72b53b4c9d2cdf8",
+    "title": "Enim pariatur in sint",
+    "imgIndex": 2,
+    "type": "Online",
+    "participants": 13,
+    "date": "Sat Oct 08 2022 14:46:35 GMT+0200 (Central European Summer Time)",
+    "joined": false
+  },
+  {
+    "id": "62d16e1e12e9ddbb930d37e0",
+    "title": "Id ipsum ullamco",
+    "imgIndex": 3,
+    "type": "Online",
+    "participants": 7,
+    "date": "Tue Dec 20 2022 15:45:14 GMT+0100 (Central European Standard Time)",
+    "joined": false
+  },
+  {
+    "id": "62d16e1e42d440c8a023faa8",
+    "title": "Consequat culpa et id",
+    "imgIndex": 4,
+    "type": "Online",
+    "participants": 29,
+    "date": "Thu Dec 08 2022 05:24:34 GMT+0100 (Central European Standard Time)",
+    "joined": false
+  },
+  {
+    "id": "62d16e1efa2a67b97de9db43",
+    "title": "Aliquip do minim pariatur tempor",
+    "imgIndex": 5,
+    "type": "Online",
+    "participants": 14,
+    "date": "Mon Oct 03 2022 17:03:26 GMT+0200 (Central European Summer Time)",
+    "joined": false
+  },
+  {
+    "id": "62d16e1e98a2b25c784a01b0",
+    "title": "Cupidatat duis Lorem deserunt",
+    "imgIndex": 6,
+    "type": "Online",
+    "participants": 9,
+    "date": "Tue Nov 29 2022 03:02:51 GMT+0100 (Central European Standard Time)",
+    "joined": false
+  },
+  {
+    "id": "62d16e1eab913c10c1df9d67",
+    "title": "Commodo tempor reprehenderit eu",
+    "imgIndex": 7,
+    "type": "Online",
+    "participants": 12,
+    "date": "Mon Feb 06 2023 21:38:22 GMT+0100 (Central European Standard Time)",
+    "joined": false
+  },
+  {
+    "id": "62d16e1edd7519e8ab2c35ab",
+    "title": "Dolor ex",
+    "imgIndex": 8,
+    "type": "Online",
+    "participants": 24,
+    "date": "Sun Sep 25 2022 15:52:21 GMT+0200 (Central European Summer Time)",
+    "joined": false
+  },
+  {
+    "id": "62d16e1e18c67fa31917bd8a",
+    "title": "Esse laborum",
+    "imgIndex": 9,
+    "type": "Online",
+    "participants": 12,
+    "date": "Thu Oct 20 2022 07:50:04 GMT+0200 (Central European Summer Time)",
+    "joined": false
+  }
+]
