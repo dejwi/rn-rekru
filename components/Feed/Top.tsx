@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   prof: {
-    width: 50,
-    height: 50,
+    width: 55,
+    height: 55,
     borderColor: '#fff',
     borderWidth: 2,
     borderRadius: 50,

@@ -36,7 +36,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#4fcbc2',
     justifyContent: 'space-evenly',
-    paddingVertical: 20,
+    paddingTop: 18,
+    paddingBottom: 12,
   },
   svg: {
     width: 26,
