@@ -1,0 +1,37 @@
+[
+  {
+    "id": "62d1c2ccd0ffa2a0be0801c1",
+    "profilePicIndex": 0,
+    "followed": false,
+    "firstName": "Wiktor",
+    "lastName": "Noculewski"
+  },
+  {
+    "id": "62d1c2cc93ee6adbc3ad64e2",
+    "profilePicIndex": 1,
+    "followed": false,
+    "firstName": "Marek",
+    "lastName": "Kowalski"
+  },
+  {
+    "id": "62d1c2cc18a0b007a5e9a5b8",
+    "profilePicIndex": 5,
+    "followed": false,
+    "firstName": "Krzysztof",
+    "lastName": "Nowakowski"
+  },
+  {
+    "id": "62d1c2cc4bd2313686a17b79",
+    "profilePicIndex": 3,
+    "followed": false,
+    "firstName": "Zbigniew",
+    "lastName": "Pogoda"
+  },
+  {
+    "id": "62d1c2cc032c072ee3399713",
+    "profilePicIndex": 4,
+    "followed": false,
+    "firstName": "Ben",
+    "lastName": "Awad"
+  }
+]
