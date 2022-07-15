@@ -4,7 +4,6 @@ import {
   View,
   Image,
   FlatList,
-  ImageSourcePropType,
   TouchableOpacity,
 } from 'react-native';
 import React, { useState } from 'react';

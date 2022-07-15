@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, TouchableOpacity } from 'react-native';
 import React from 'react';
 import HomeSvg from '../assets/svgs/home.svg';
 import ChatSvg from '../assets/svgs/conversation.svg';

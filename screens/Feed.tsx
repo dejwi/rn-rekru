@@ -1,4 +1,4 @@
-import { SafeAreaView, StatusBar, StyleSheet, View } from 'react-native';
+import { SafeAreaView, StatusBar } from 'react-native';
 import React, { useState } from 'react';
 import Top from '../components/Feed/Top';
 import Search from '../components/Feed/Search';
@@ -25,5 +25,3 @@ const Feed = () => {
 };
 
 export default Feed;
-
-const styles = StyleSheet.create({});
