@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 import Top from '../components/Feed/Top';
 import Search from '../components/Feed/Search';
 import Categories from '../components/Feed/Categories';
+
 import Board from '../components/Feed/tabs/Board';
+import Events from '../components/Feed/tabs/Events';
 
 const Feed = () => {
   const [current, setCurrent] = useState<tabs>('board');
@@ -15,6 +17,7 @@ const Feed = () => {
       <Search />
       <Categories current={current} updateCurrent={(tab) => setCurrent(tab)} />
       {current === 'board' && <Board />}
+      {current === 'events' && <Events />}
     </SafeAreaView>
   );
 };
