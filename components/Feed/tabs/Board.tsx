@@ -13,6 +13,8 @@ import HeartSvg from '../../../assets/svgs/heart.svg';
 import HeartFullSvg from '../../../assets/svgs/heartFull.svg';
 import profilePics from '../../../data/profilePics/profilePics';
 import images from '../../../data/images/images';
+import Specialists from '../Specialists';
+import Groups from '../Groups';
 
 const Board = () => {
   return (
@@ -21,6 +23,13 @@ const Board = () => {
       renderItem={({ item }) => <RenderItem item={item} />}
       keyExtractor={(item) => item.id}
       style={styles.flist}
+      ListHeaderComponent={() => <Specialists header="Inne osoby" />}
+      ListFooterComponent={() => (
+        <>
+          <Specialists header="Specjaliści" />
+          <Groups />
+        </>
+      )}
     />
   );
 };
