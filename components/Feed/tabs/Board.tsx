@@ -8,14 +8,16 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React, { useState } from 'react';
-import data from '../../../data/tab';
+import data from '../../../data/board.json';
 import HeartSvg from '../../../assets/svgs/heart.svg';
 import HeartFullSvg from '../../../assets/svgs/heartFull.svg';
+import profilePics from '../../../data/profilePics/profilePics';
+import images from '../../../data/images/images';
 
 const Board = () => {
   return (
     <FlatList
-      data={data}
+      data={data as boardData[]}
       renderItem={({ item }) => <RenderItem item={item} />}
       keyExtractor={(item) => item.id}
       style={styles.flist}
@@ -24,30 +26,38 @@ const Board = () => {
 };
 export default Board;
 
-const RenderItem: React.FC<{ item: tablicaData }> = ({ item }) => {
+const RenderItem: React.FC<{ item: boardData }> = ({ item }) => {
   const canExpand = item.content.length > 50;
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const [isLiked, setIsLiked] = useState(false);
+  const [isLiked, setIsLiked] = useState(item.liked);
+
+  const updateLiked = () => {
+    setIsLiked((prev) => {
+      const indx = data.findIndex((e) => e.id === item.id);
+      data[indx].liked = !prev;
+      return !prev;
+    });
+  };
 
   return (
     <View style={styles.ritem}>
       <View style={styles.namepicCont}>
         <Image
-          source={item.profilePic as ImageSourcePropType}
+          source={profilePics[item.profilePicIndex]}
           style={styles.profPic}
         />
         <Text style={styles.fname}>{item.fullName}</Text>
       </View>
 
-      {!!item.img && (
-        <Image source={item.img as ImageSourcePropType} style={styles.img} />
+      {!!item.imgIndex && (
+        <Image source={images[item.imgIndex]} style={styles.img} />
       )}
 
       <View style={styles.titleHeartCont}>
         <Text style={styles.title}>{item.title}</Text>
         <View style={styles.heartCont}>
-          <TouchableOpacity onPress={() => setIsLiked((prev) => !prev)}>
+          <TouchableOpacity onPress={updateLiked}>
             {isLiked ? (
               <HeartFullSvg width={28} height={28} />
             ) : (

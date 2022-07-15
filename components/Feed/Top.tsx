@@ -3,7 +3,7 @@ import React from 'react';
 import AddPostSvg from '../../assets/svgs/addpost.svg';
 import CalendarSvg from '../../assets/svgs/calendar.svg';
 import AddPeopleSvg from '../../assets/svgs/addpeople.svg';
-import profilePic from '../../assets/imgs/profpic.png';
+import profilePic from '../../data/profpic.png';
 
 const Top = () => {
   return (
