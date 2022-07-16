@@ -1,0 +1,37 @@
+[
+  {
+    "id": "62d31933da21021cddf7499b",
+    "vidIndex": 0,
+    "liked": false,
+    "author": "Michelle Obama",
+    "title": "Najlepsze cynamonki"
+  },
+  {
+    "id": "62d3193325dd7c1bd014a8f6",
+    "vidIndex": 1,
+    "liked": false,
+    "author": "Michelle Obama",
+    "title": "Fantastyczna zupa"
+  },
+  {
+    "id": "62d31933d92c0b7c651c38e2",
+    "vidIndex": 0,
+    "liked": false,
+    "author": "John Phillips",
+    "title": "Consectetur aute cillum aliquip"
+  },
+  {
+    "id": "62d319338e56661ff44078c2",
+    "vidIndex": 1,
+    "liked": false,
+    "author": "Julianne Carver",
+    "title": "Enim ad consequat irure"
+  },
+  {
+    "id": "62d31933bc84ca45725e3edf",
+    "vidIndex": 0,
+    "liked": false,
+    "author": "Wong Case",
+    "title": "Qui esse incididunt id ad"
+  }
+]
