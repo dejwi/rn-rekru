@@ -51,3 +51,12 @@ interface vidData {
   vidIndex: number;
   liked: boolean;
 }
+
+interface podcastData {
+  id: string;
+  imgIndex: number;
+  author: string;
+  title: string;
+  content: string;
+  length: string;
+}
