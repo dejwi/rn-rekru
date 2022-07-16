@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import React, { useRef } from 'react';
 import { Video, AVPlaybackStatusSuccess, AVPlaybackSource } from 'expo-av';
-import Slider from 'react-native-slider';
 import PlaySvg from '../../assets/svgs/play.svg';
+import CustomSlider from './CustomSlider';
 
 interface props {
   vid: string;
@@ -32,7 +32,7 @@ const CustomVideo: React.FC<props> = ({ vid, updateDuration }) => {
           onPlaybackStatusUpdate={(status) =>
             setStatus(status as AVPlaybackStatusSuccess)
           }
-          progressUpdateIntervalMillis={800}
+          progressUpdateIntervalMillis={200}
           rate={1.0}
           onReadyForDisplay={sendDuration}
           // resizeMode goes dumb but works
@@ -48,17 +48,13 @@ const CustomVideo: React.FC<props> = ({ vid, updateDuration }) => {
         </TouchableOpacity>
       </View>
 
-      <Slider
+      <CustomSlider
         style={styles.slider}
-        maximumValue={status?.durationMillis}
-        value={status?.positionMillis}
+        maximumValue={status?.durationMillis as number}
+        value={status?.positionMillis as number}
         onValueChange={(slide: number) =>
           videoRef.current?.setPositionAsync(slide)
         }
-        minimumTrackTintColor="#7B7B7B"
-        maximumTrackTintColor="#C4C4C4"
-        thumbStyle={styles.thumb}
-        trackStyle={styles.track}
       />
       <Text style={styles.durationTxt}>
         {!!status && formatTime(status?.positionMillis as number)}
@@ -115,16 +111,5 @@ const styles = StyleSheet.create({
     fontFamily: 'MontserratMedium',
     fontSize: 12,
     marginTop: -13,
-  },
-  thumb: {
-    width: 12,
-    height: 12,
-    borderRadius: 50,
-    backgroundColor: '#7B7B7B',
-    borderColor: '#C4C4C4',
-    borderWidth: 1.5,
-  },
-  track: {
-    height: 2,
   },
 });
