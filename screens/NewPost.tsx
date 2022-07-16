@@ -47,7 +47,7 @@ const NewPost = () => {
         </TouchableOpacity>
       </View>
 
-      <View style={styles.line}></View>
+      <View style={styles.line} />
 
       <View style={styles.titleCont}>
         <Text style={styles.titleTxt}>Dodaj tytuł:</Text>
@@ -59,7 +59,7 @@ const NewPost = () => {
         />
       </View>
 
-      <View style={styles.line}></View>
+      <View style={styles.line} />
 
       <View style={styles.contentCont}>
         <Image source={profilePics[7]} style={styles.prof} />
@@ -75,7 +75,7 @@ const NewPost = () => {
         </View>
       </View>
 
-      <View style={styles.line}></View>
+      <View style={styles.line} />
 
       <TouchableOpacity style={styles.imgBtn}>
         <AddPicSvg width={25} height={25} />
