@@ -25,7 +25,7 @@ const NewPost = () => {
     const temp: boardData = {
       content,
       title,
-      fullName: 'Michelle Obama',
+      fullName: 'Michelle Awad',
       id: uuid.v4().toString(),
       imgIndex: null,
       liked: false,
