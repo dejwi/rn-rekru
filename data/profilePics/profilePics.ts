@@ -6,6 +6,7 @@ const profilePics = [
   require('./4.png'),
   require('./5.png'),
   require('./6.png'),
+  require('./7.png'),
 ];
 
 export default profilePics;

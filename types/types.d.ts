@@ -3,6 +3,7 @@ type RootStackParamList = {
   Article: {
     id: string;
   };
+  NewPost: undefined;
 };
 
 interface boardData {
