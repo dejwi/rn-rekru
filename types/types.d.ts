@@ -43,3 +43,11 @@ interface specialistData {
   followed: boolean;
   profilePicIndex: number;
 }
+
+interface vidData {
+  id: string;
+  title: string;
+  author: string;
+  vidIndex: number;
+  liked: boolean;
+}
