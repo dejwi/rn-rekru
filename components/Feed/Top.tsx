@@ -3,7 +3,7 @@ import React from 'react';
 import AddPostSvg from '../../assets/svgs/addpost.svg';
 import CalendarSvg from '../../assets/svgs/calendar.svg';
 import AddPeopleSvg from '../../assets/svgs/addpeople.svg';
-import profilePic from '../../data/profpic.png';
+import profilePics from '../../data/profilePics/profilePics';
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 
 const Top = () => {
@@ -18,7 +18,7 @@ const Top = () => {
         <CalendarSvg style={styles.svg} />
         <AddPeopleSvg style={styles.svg} fill="#28235F" />
       </View>
-      <Image source={profilePic} style={styles.prof} />
+      <Image source={profilePics[7]} style={styles.prof} />
     </View>
   );
 };
