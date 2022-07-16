@@ -1,11 +1,10 @@
 import React from 'react';
-// import { StatusBar } from 'expo-status-bar';
-// import { StyleSheet, Text, View } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import Feed from './screens/Feed';
 import ArticleFull from './screens/ArticleFull';
+import NewPost from './screens/NewPost';
 import Navbar from './components/Navbar';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -27,6 +26,7 @@ const App = () => {
       >
         <Stack.Screen name="Feed" component={Feed} />
         <Stack.Screen name="Article" component={ArticleFull} />
+        <Stack.Screen name="NewPost" component={NewPost} />
       </Stack.Navigator>
       <Navbar />
     </NavigationContainer>
@@ -34,12 +34,3 @@ const App = () => {
 };
 
 export default App;
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });

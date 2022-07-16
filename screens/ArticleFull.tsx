@@ -5,6 +5,7 @@ import {
   Image,
   TouchableOpacity,
   ScrollView,
+  SafeAreaView,
 } from 'react-native';
 import React from 'react';
 import ArrowSvg from '../assets/svgs/arrow.svg';
@@ -24,16 +25,18 @@ const ArticleFull = () => {
 
   if (!article) return null;
   return (
-    <ScrollView>
-      <View style={styles.mainCont}>
-        <TouchableOpacity style={styles.backbtn} onPress={() => nav.goBack()}>
-          <ArrowSvg width={20} height={20} />
-        </TouchableOpacity>
-        <Text style={styles.title}>{article.title}</Text>
-        <Image source={images[article.imgIndex]} style={styles.img} />
-        <Text style={styles.content}>{article.content}</Text>
-      </View>
-    </ScrollView>
+    <SafeAreaView>
+      <ScrollView>
+        <View style={styles.mainCont}>
+          <TouchableOpacity style={styles.backbtn} onPress={() => nav.goBack()}>
+            <ArrowSvg width={20} height={20} />
+          </TouchableOpacity>
+          <Text style={styles.title}>{article.title}</Text>
+          <Image source={images[article.imgIndex]} style={styles.img} />
+          <Text style={styles.content}>{article.content}</Text>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 export default ArticleFull;

@@ -1,15 +1,20 @@
-import { StyleSheet, View, Image } from 'react-native';
+import { StyleSheet, View, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
 import AddPostSvg from '../../assets/svgs/addpost.svg';
 import CalendarSvg from '../../assets/svgs/calendar.svg';
 import AddPeopleSvg from '../../assets/svgs/addpeople.svg';
 import profilePic from '../../data/profpic.png';
+import { NavigationProp, useNavigation } from '@react-navigation/native';
 
 const Top = () => {
+  const nav = useNavigation<NavigationProp<RootStackParamList>>();
+
   return (
     <View style={styles.mainCont}>
       <View style={styles.svgsCont}>
-        <AddPostSvg style={styles.svg} />
+        <TouchableOpacity onPress={() => nav.navigate('NewPost')}>
+          <AddPostSvg style={styles.svg} />
+        </TouchableOpacity>
         <CalendarSvg style={styles.svg} />
         <AddPeopleSvg style={styles.svg} fill="#28235F" />
       </View>
