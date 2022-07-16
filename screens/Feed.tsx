@@ -7,6 +7,7 @@ import Categories from '../components/Feed/Categories';
 import Board from '../components/Feed/tabs/Board';
 import Events from '../components/Feed/tabs/Events';
 import Articles from '../components/Feed/tabs/Articles';
+import Viedos from '../components/Feed/tabs/Viedos';
 
 const Feed = () => {
   const [current, setCurrent] = useState<tabs>('board');
@@ -20,6 +21,7 @@ const Feed = () => {
       {current === 'board' && <Board />}
       {current === 'events' && <Events />}
       {current === 'articles' && <Articles />}
+      {current === 'video' && <Viedos />}
     </SafeAreaView>
   );
 };
