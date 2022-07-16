@@ -21,7 +21,6 @@ const Board = () => {
       data={data as boardData[]}
       renderItem={({ item }) => <RenderItem item={item} />}
       keyExtractor={(item) => item.id}
-      style={styles.flist}
       ListHeaderComponent={() => <Specialists header="Inne osoby" />}
       ListFooterComponent={() => (
         <>
@@ -93,9 +92,6 @@ const RenderItem: React.FC<{ item: boardData }> = ({ item }) => {
 };
 
 const styles = StyleSheet.create({
-  flist: {
-    marginTop: 10,
-  },
   ritem: {
     alignSelf: 'center',
     width: '90%',

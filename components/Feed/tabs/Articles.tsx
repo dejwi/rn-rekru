@@ -19,7 +19,6 @@ const Articles = () => {
       data={data as articleData[]}
       renderItem={({ item }) => <RenderItem item={item} />}
       keyExtractor={(item) => item.id}
-      style={styles.flist}
     />
   );
 };
@@ -62,9 +61,6 @@ const RenderItem: React.FC<{ item: articleData }> = ({ item }) => {
 };
 
 const styles = StyleSheet.create({
-  flist: {
-    marginTop: 10,
-  },
   ritem: {
     width: '90%',
     alignSelf: 'center',

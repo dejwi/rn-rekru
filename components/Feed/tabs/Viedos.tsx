@@ -18,7 +18,6 @@ const Viedos = () => {
       data={data}
       renderItem={({ item }) => <RenderItem item={item} />}
       keyExtractor={(item) => item.id}
-      style={styles.flist}
     />
   );
 };
@@ -69,9 +68,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
     alignItems: 'center',
     marginBottom: 25,
-  },
-  flist: {
-    marginTop: 10,
   },
   secondCont: {
     width: '90%',

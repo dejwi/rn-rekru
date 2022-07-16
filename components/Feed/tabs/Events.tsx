@@ -18,7 +18,6 @@ const Events = () => {
       data={data as eventsData[]}
       renderItem={({ item }) => <RenderItem item={item} />}
       keyExtractor={(item) => item.id}
-      style={styles.flist}
     />
   );
 };
@@ -57,9 +56,6 @@ const RenderItem: React.FC<{ item: eventsData }> = ({ item }) => {
 };
 
 const styles = StyleSheet.create({
-  flist: {
-    marginTop: 10,
-  },
   ritem: {
     width: '90%',
     alignSelf: 'center',
